@@ -1,5 +1,3 @@
-// @generated automatically by Diesel CLI.
-
 diesel::table! {
     files (absolute_file_path) {
         absolute_file_path -> Text,

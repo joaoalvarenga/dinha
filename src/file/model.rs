@@ -1,8 +1,6 @@
+use serde::{Serialize, Deserialize};
 
-use serde::{Deserialize, Serialize};
-
-use crate::schema::files;
-
+use super::schema::files;
 #[derive(Debug, Clone, Serialize, Deserialize, diesel::Queryable, diesel::Insertable)]
 pub struct File {
     pub absolute_file_path: String,
