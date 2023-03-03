@@ -9,7 +9,7 @@ Features 💥
 - Schedule automatic deletions for unused files 🧹
 
 # Usage
-![]()
+![](docs/demo.gif)
 
 We're in development phase so you still need to compile your own version of Dinha. You will need to install [Rust Development Kit](https://www.rust-lang.org/tools/install).
 
