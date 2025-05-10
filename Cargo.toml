@@ -1,0 +1,32 @@
+[package]
+name = "dinha"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "dinha"
+path = "src/bin/client.rs"
+
+[[bin]]
+name = "dinha-daemon"
+path = "src/bin/daemon.rs"
+
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+notify = "4.0.16"
+diesel = { version = "2", features = ["sqlite", "r2d2", "chrono"] }
+serde = { version = "1.0.137", features = ["derive"] }
+chrono = { version = "0.4.23", features = ["serde"] }
+dotenv = "0.15.0"
+log = "0.4"
+env_logger = "0.10.0"
+tui = "0.19"
+crossterm = "0.25"
+
+unicode-width = "0.1"
+rand = "0.8.5"
+regex = "1.7.1"
+lazy_static = "1.4.0"
