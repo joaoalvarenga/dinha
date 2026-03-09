@@ -11,14 +11,21 @@ Features 💥
 # Usage
 ![](docs/demo.gif)
 
-We're in development phase so you still need to compile your own version of Dinha. You will need to install [Rust Development Kit](https://www.rust-lang.org/tools/install).
+You will need to install [Go 1.21+](https://go.dev/dl/).
 
 Now we just need to start daemon service:
 ```bash
-cargo run --bin dinha-daemon
+go run ./cmd/dinha-daemon
 ```
 
 Then, in another terminal, we can open our manager:
 ```bash
-cargo run --bin dinha
+go run ./cmd/dinha
+```
+
+## Building
+
+```bash
+go build -o bin/dinha ./cmd/dinha
+go build -o bin/dinha-daemon ./cmd/dinha-daemon
 ```
