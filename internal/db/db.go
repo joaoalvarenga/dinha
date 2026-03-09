@@ -14,7 +14,8 @@ import (
 func GetDB() *sql.DB {
 	connSpec := os.Getenv("DINHA_DATABASE_URL")
 	if connSpec == "" {
-		log.Fatal("DINHA_DATABASE_URL environment variable is required")
+		// log.Fatal("DINHA_DATABASE_URL environment variable is required")
+		connSpec = "~/.dinha/data.sqlite"
 	}
 
 	// Expand ~ to home directory
