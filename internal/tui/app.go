@@ -280,7 +280,7 @@ func (a *App) showDaemonSettings() {
 		a.pages.RemovePage("dialog")
 	})
 
-	a.showCenteredDialog(form, 50, 9)
+	a.showCenteredDialog(form, 50, 13)
 }
 
 func (a *App) getSelectedWatch() (path, expiration string) {
