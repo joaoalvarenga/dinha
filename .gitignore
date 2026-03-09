@@ -7,8 +7,8 @@ Cargo.lock
 
 # Go binaries
 bin/
-dinha
-dinha-daemon
+/dinha
+/dinha-daemon
 *.exe
 
 # IDE
